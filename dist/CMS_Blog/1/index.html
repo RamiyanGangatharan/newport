@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strapi Blog</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/" aria-current="page">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/CMS_Blog" aria-current="page">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about" aria-current="page">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/resume" aria-current="page">Resume</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Projects">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/academic">Academic</a></li>
+                        <li><a class="dropdown-item" href="/personal">Personal</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown menu with hover effect -->
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Notes">
+                        Notes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/WDFnotes">Frameworks</a></li>
+                        <li><a class="dropdown-item" href="/CICS">Mainframe CICS</a></li>
+                        <li><a class="dropdown-item" href="/Placement">Field Placement</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+            
+            
+            
+        </header>
+    
+        <main class="container my-4">
+            
+<div class="container-fluid mt-1 text-center">
+    <h1 class="display-1 text-center">Blog</h1>
+    <p class="subtitle text-center">Sharing Ideas with Strapi - Ramiyan Gangatharan</p>
+
+    <div class="row">
+        
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h2 class="card-title display-5 fw-bold mb-3">Graph Theory</h2>
+                        <img src="http://localhost:1337/uploads/example_graph_5cf1426162.png" width="500" height="300">
+                        <div class="card-text mt-4">
+                            <p>Graph theory explores mathematical structures known as graphs, which model relationships between objects. A graph consists of vertices (or nodes) connected by edges (or links) that represent pairwise connections. These graphs can be either directed, where edges have a specified direction, or undirected, where they do not. They can also be weighted or unweighted, depending on whether numerical values (weights) are assigned to edges. Key concepts in graph theory include vertices and edges as core components, with adjacency defining the relationship between connected vertices and degree referring to the number of edges incident to a vertex. Paths represent sequences of edges connecting vertices, and cycles are paths that begin and end at the same vertex. A connected graph has a path between every pair of vertices, while a subgraph is a subset of vertices and edges from a larger graph that still forms a graph. These concepts are foundational in computer science, where graphs are used to represent systems like social networks, transportation grids, the internet, and software dependencies.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h2 class="card-title display-5 fw-bold mb-3">Heap Sort</h2>
+                        <img src="http://localhost:1337/uploads/heap_d75f63a9ef.svg" width="500" height="300">
+                        <div class="card-text mt-4">
+                            <p>According to <a href="https://www.geeksforgeeks.org/heap-sort/">GeeksforGeeks</a>, &quot;<em>heap sort is a comparison-based sorting technique based on Binary Heap Data Structure. It can be seen as an optimization over selection sort where we first find the max (or min) element and swap it with the last (or first). We repeat the same process for the remaining elements. In Heap Sort, we use Binary Heap so that we can quickly find and move the max element in O(Log n) instead of O(n) and hence achieve the O(n Log n) time complexity.</em>&quot;</p>
+<p>One of the main advantages of Heap Sort is its efficient time complexity. It has a time complexity of O(n log n) in all cases, making it efficient for sorting large datasets. The log n factor comes from the height of the binary heap, which ensures that the algorithm performs well even with a large number of elements. Another benefit of Heap Sort is its minimal memory usage. By using an iterative heapify() method instead of a recursive one, it can minimize additional memory requirements, aside from the space needed to hold the initial list of items to be sorted. Additionally, Heap Sort is simpler to understand compared to other sorting algorithms that offer similar efficiency. It does not rely on advanced computer science concepts, such as recursion, making it more accessible for learners.</p>
+<p>Despite its advantages, Heap Sort has some drawbacks. One major disadvantage is that it can be costly, as the constants involved are higher compared to other sorting algorithms like merge sort, even though both have a time complexity of O(n Log n). Heap Sort is also an unstable sorting algorithm. This means that it may rearrange the relative order of equal elements, which could be problematic in certain use cases where stability is important. Finally, Heap Sort is not the most efficient sorting algorithm because of the high constants in its time complexity, making it less ideal for certain situations compared to algorithms with better practical performance.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h2 class="card-title display-5 fw-bold mb-3">Highway 401</h2>
+                        <img src="http://localhost:1337/uploads/hwy_401_20fea66699.jpg" width="500" height="300">
+                        <div class="card-text mt-4">
+                            <p>Highway 401 is one of Canada&#39;s most significant and busiest highways, spanning southern Ontario. It connects Windsor in the west to the Quebec border near Cornwall, covering approximately 817 kilometers (508 miles), making it one of the longest highways in the country.</p>
+<p>Officially designated as Highway 401, it is commonly referred to as the Macdonald-Cartier Freeway, honoring two prominent Canadian politicians, Sir John A. Macdonald and Sir George-Étienne Cartier. This vital corridor is recognized as one of the busiest highways in North America, with certain sections experiencing traffic volumes exceeding 400,000 vehicles per day. A substantial portion of this traffic consists of commercial vehicles, highlighting its role as a critical route for freight transportation that connects various regions and facilitates trade.</p>
+<p>In terms of infrastructure, Highway 401 features as many as 18 lanes in some sections, particularly around the Greater Toronto Area, making it one of the widest highways in the world. It has numerous interchanges with major highways, including Highway 403, Highway 407, Highway 404, and the Queen Elizabeth Way (QEW), enhancing regional connectivity. Along the highway, several rest areas and service centers offer amenities such as restaurants, fuel stations, and parking, ensuring convenience for travelers.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+<style>
+    .container { max-width: 3000px; }
+    .container-fluid { width: 100%; }
+    .card-body { padding: 10px; }
+
+    body {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+    }
+
+    .card {
+        border: none;
+        background-color: #ffffff;
+        padding: 15px;
+    }
+
+    h2.card-title {
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        color: #555;
+        text-align: justify;
+    }
+</style>
+            <nav aria-label="Page navigation" class="mt-4">
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="/CMS_Blog/">Previous</a></li>
+        
+        
+
+        <li class="page-item"><a class="page-link" href="/CMS_Blog/2/">Next</a></li>
+    </ul>
+</nav>
+            
+        </main>
+
+        <footer class="text-center mt-4"><div class="container">
+    <p class="mb-1">&copy; <span id="copyrightYear"></span> Ramiyan Gangatharan - 100835223</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="/" class="text-muted">Home</a></li>
+        <li class="list-inline-item"><a href="/blog" class="text-muted">Blog</a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/ramiyan-gangatharan/" class="text-muted">LinkedIn</a></li>
+        <li class="list-inline-item"><a href="/TOC" class="text-muted">Terms &amp; Conditions</a></li>
+    </ul>
+</div>
+<script>document.getElementById("copyrightYear").textContent = new Date().getFullYear();</script></footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

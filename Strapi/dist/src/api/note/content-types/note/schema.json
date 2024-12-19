@@ -1,0 +1,22 @@
+{
+    "kind": "collectionType",
+    "collectionName": "notes",
+    "info": {
+        "singularName": "note",
+        "pluralName": "notes",
+        "displayName": "WDFNote",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "Title": {
+            "type": "string"
+        },
+        "Content": {
+            "type": "richtext"
+        }
+    }
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 2A</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/" aria-current="page">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/CMS_Blog" aria-current="page">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about" aria-current="page">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/resume" aria-current="page">Resume</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Projects">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/academic">Academic</a></li>
+                        <li><a class="dropdown-item" href="/personal">Personal</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown menu with hover effect -->
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Notes">
+                        Notes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/WDFnotes">Frameworks</a></li>
+                        <li><a class="dropdown-item" href="/CICS">Mainframe CICS</a></li>
+                        <li><a class="dropdown-item" href="/Placement">Field Placement</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+            
+    <div class="container">
+        <div class="row border-bottom pb-3 mb-4 justify-content-center">
+            <div class="col-lg-6 my-4 mt-5" style="padding-top: 40px;">
+                <h1 class="display-6 text-center">
+                    
+                    
+                    
+                    
+                    
+                    
+                    A2 Instruction: CMS Implementation
+                    
+                    
+                    
+                    
+                    
+                </h1>
+            </div>
+            <div class="col-md-4 my-4 text-end">
+                <div class="card border-0 bg-light shadow-lg rounded-3">
+                    <div class="card-body p-4">
+                        <p class="card-text text-uppercase text-primary fw-bold mb-2">Durham College - SEIT</p>
+                        <p class="card-text mb-2">Ramiyan Gangatharan</p>
+                        <p class="card-text mb-2">100835223</p>
+                        <p class="card-text mb-2">
+                            November 22, 2024
+                        </p>
+                        <p class="card-text text-muted mb-0">Web Development: Frameworks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            
+                <div class="text-center mt-4 mb-4">
+    <nav class="navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid d-flex justify-content-center">
+            <ul class="navbar-nav d-flex flex-wrap justify-content-center">
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/assignments/">Assignment 1A</a></div></li>
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/assignments/1/">Assignment 1B</a></div></li>
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/assignments/2/">Assignment 2A</a></div></li>
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/assignments/3/">Assignment 2B</a></div></li>
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/assignments/4/">Assignment 3A</a></div></li>
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/assignments/5/">Assignment 3B</a></div></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="text-center text-muted"><small>navigate here</small></div>
+</div>
+            
+            
+        </header>
+    
+        <main class="container my-4">
+            
+
+  <article>
+    <!-- Loop through images -->
+    <div class="image-gallery">
+      
+        
+          <img 
+            class="rounded mx-auto mb-4 d-block"
+            src="http://localhost:1337/uploads/Strapi1_307bd2e05c.jpg" 
+            alt="Assignment 2A">
+        
+      
+    </div>
+
+    <!-- Content Display -->
+    <div><style>
+    .content-container { margin: 0 auto; max-width: 8.5in; padding: 20px; text-align: justify;} 
+    .content-container p { margin-bottom: 15px;} 
+    .content-container h3 { text-align: center; margin-bottom: 20px; } 
+</style>
+
+<div class="content-container">
+
+<h3>General Information</h3>
+<ul>
+<li>Submission<ul>
+<li>Delete the <code>node_modules</code> folder.</li>
+<li>Delete the <code>dist</code> folder.</li>
+<li>If you have a <code>.env</code> file, delete it too.<ul>
+<li>Remove your API key if it&#39;s been hard coded anywhere.</li>
+</ul>
+</li>
+<li>Zip up everything else and put the resulting file in the dropbox.</li>
+</ul>
+</li>
+<li>Rubric<ul>
+<li><code>/5</code> Functionality</li>
+<li><code>/5</code> Creativity and Design</li>
+<li><code>/5</code> Documentation</li>
+<li><code>/5</code> Understanding of Project Requirements</li>
+<li><code>-5 (25%)</code> Late</li>
+<li><code>-20 (100%)</code> More than 72 hours late</li>
+</ul>
+</li>
+</ul>
+<h3>Requirements</h3>
+<p>You will modify your existing project demonstrating the use of a headless CMS in the context of modern web development practices.</p>
+<ul>
+<li><p>API Interaction - Demonstrate fetching content from a Headless CMS via RESTful APIs.</p>
+</li>
+<li><p>Content Modeling - Structure content types and fields within the Headless CMS to fit the needs of the SSG.</p>
+</li>
+<li><p>Data Fetching - Implement fetching strategies for data, build-time, depending on the project&#39;s needs.</p>
+</li>
+<li><p>Template Design - Leverage modern templating languages to render dynamic content from the Headless CMS.</p>
+</li>
+<li><p>Pagination &amp; Filtering - Implement dynamic features like pagination, filtering, and search functionalities that leverage Headless CMS content.</p>
+</li>
+</ul>
+<p>Further you will provide documentation that indicates all key aspects of the project and guidance on how to maintain. If the scope of the project has significantly shifted since Lab 2, this is not necessarily a problem, but indicate how and why.</p>
+<h3>Content</h3>
+<p>You will have two different sections of your site.</p>
+<h4>Blog</h4>
+<p>Create a blog section. </p>
+<ul>
+<li><p>If there isn&#39;t one already, create a schema for a blog post.</p>
+<ul>
+<li>It should have at minimum, <code>title</code> and <code>content</code> or something along those lines.</li>
+<li>You may add extra fields if you like.</li>
+</ul>
+</li>
+<li><p>Put your lab writeups in the CMS.</p>
+<ul>
+<li>Your writeup should have an introduction explaining what you&#39;re writing about and why.<ul>
+<li>(You may have to go back to your Lab 1 and add this paragraph in)</li>
+</ul>
+</li>
+<li>Have them render with permalinks in your site.</li>
+<li>When you go to add your screenshots, you may find you need extra fields in your schema.</li>
+</ul>
+</li>
+<li><p>Create two or three other posts about something you&#39;re interested in.</p>
+<ul>
+<li>Preferably, something technology-based that shows you&#39;re enthusiastic about your future career.</li>
+</ul>
+</li>
+<li><p>For pagination, this should have forward and back buttons (based on date).</p>
+</li>
+<li><p>Please remove any instructions files that are in your project after they have been moved to the CMS.</p>
+</li>
+<li><p>Remember, while you are writing this for me to grade, hopefully you&#39;re going to put enough effort into it where you&#39;d be happy to show potential employers.</p>
+</li>
+</ul>
+<h4>Custom Schema</h4>
+<p>In assignment 1, we used a <code>.json</code> file to define some data that we used to display on the page.<br>Now we will put that data into our CMS.</p>
+<ul>
+<li><p>This should generally be the same idea as your existing content.</p>
+</li>
+<li><p>If you copied my animals example, please don&#39;t.</p>
+</li>
+<li><p>You should have a field for an image to put on the page.</p>
+<ul>
+<li>You&#39;ll have to figure out how/where to host this image.</li>
+</ul>
+</li>
+<li><p>Figure out a way to filter specific pieces of content.</p>
+<ul>
+<li>In 11ty, you&#39;ll probably use collections</li>
+<li>ie, in my example, what if I only want to see a list of dogs?</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+  </article>
+
+
+
+            <nav aria-label="Page navigation" class="mt-4">
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="/assignments/1/">Previous</a></li>
+        
+        
+
+        <li class="page-item"><a class="page-link" href="/assignments/3/">Next</a></li>
+    </ul>
+</nav>
+            
+        </main>
+
+        <footer class="text-center mt-4"><div class="container">
+    <p class="mb-1">&copy; <span id="copyrightYear"></span> Ramiyan Gangatharan - 100835223</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="/" class="text-muted">Home</a></li>
+        <li class="list-inline-item"><a href="/blog" class="text-muted">Blog</a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/ramiyan-gangatharan/" class="text-muted">LinkedIn</a></li>
+        <li class="list-inline-item"><a href="/TOC" class="text-muted">Terms &amp; Conditions</a></li>
+    </ul>
+</div>
+<script>document.getElementById("copyrightYear").textContent = new Date().getFullYear();</script></footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

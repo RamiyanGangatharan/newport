@@ -1,0 +1,22 @@
+---
+layout: layout/mylayout.ejs
+
+pagination:
+  data: labs
+  size: 1
+  alias: post
+
+eleventyComputed: 
+    title: <%- post.Title %>
+---
+
+<% pagination.items.forEach(post => { %>
+  <article>
+    <img 
+        class="responsive-image rounded mx-auto mb-4 d-block" 
+        src="<%= post.Image ? 'http://localhost:1337' + post.Image.url : '/path-to-placeholder-image.jpg' %>" 
+        alt="<%= post.Title || 'No Title' %>">
+    <div><%- post.Content %></div>
+  </article>
+<% }); %>
+

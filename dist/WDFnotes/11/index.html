@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDF</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/" aria-current="page">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/CMS_Blog" aria-current="page">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about" aria-current="page">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/resume" aria-current="page">Resume</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Projects">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/academic">Academic</a></li>
+                        <li><a class="dropdown-item" href="/personal">Personal</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown menu with hover effect -->
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Notes">
+                        Notes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/WDFnotes">Frameworks</a></li>
+                        <li><a class="dropdown-item" href="/CICS">Mainframe CICS</a></li>
+                        <li><a class="dropdown-item" href="/Placement">Field Placement</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+            
+            
+            
+        </header>
+    
+        <main class="container my-4">
+            <div class="container my-5">
+    
+        <article class="mb-5">
+            <div class="card shadow-sm p-4"><div class="content"><h3>Unit 2: Scalability in Microservices &amp; APIs</h3>
+<h4>What is a Microservice?</h4>
+<ul>
+<li><strong>Definition</strong>: A software architecture where an application is divided into loosely coupled, modular components.  <ul>
+<li>If one component fails, the system can still function, unlike a monolithic structure where a single failure can bring down the entire system.</li>
+</ul>
+</li>
+</ul>
+<h4>Why Use Microservices?</h4>
+<ol>
+<li><strong>Modularity</strong>  <ul>
+<li>Small, independent programs work together to form a larger application.</li>
+</ul>
+</li>
+<li><strong>Horizontal Scaling</strong>  <ul>
+<li>Applications can be distributed across multiple servers or computers for better performance.</li>
+</ul>
+</li>
+<li><strong>Content Delivery Network (CDN) Integration</strong>  <ul>
+<li>Edge locations (e.g., AWS services) reduce load on the main server.</li>
+</ul>
+</li>
+<li><strong>Security</strong>  <ul>
+<li>Each component (node) has its own security, isolating vulnerabilities.</li>
+</ul>
+</li>
+</ol>
+<h4>Microservices vs. APIs</h4>
+<ul>
+<li><strong>Microservices</strong>:  <ul>
+<li>Independent applications forming a larger system.  </li>
+<li>Enhance <strong>efficiency</strong> within the app.  </li>
+<li>Can be <strong>stateful</strong> or <strong>stateless</strong>.  </li>
+<li>Easier to scale due to minimal dependencies.  </li>
+<li>More <strong>secure</strong>, as they handle fewer transactional operations.</li>
+</ul>
+</li>
+<li><strong>APIs</strong>:  <ul>
+<li>Interfaces that allow two software components to communicate.  </li>
+<li>Aim to <strong>connect</strong> components (e.g., services, monoliths).  </li>
+<li>Classified by <strong>audience</strong>, <strong>protocol</strong>, and <strong>architecture</strong>.  </li>
+<li>Easier to debug due to their modular design.</li>
+</ul>
+</li>
+</ul>
+</div></div>
+        </article>
+</div>
+
+            <nav aria-label="Page navigation" class="mt-4">
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="/WDFnotes/10/">Previous</a></li>
+        
+        
+
+        <li class="page-item"><a class="page-link" href="/WDFnotes/12/">Next</a></li>
+    </ul>
+</nav>
+            
+        </main>
+
+        <footer class="text-center mt-4"><div class="container">
+    <p class="mb-1">&copy; <span id="copyrightYear"></span> Ramiyan Gangatharan - 100835223</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="/" class="text-muted">Home</a></li>
+        <li class="list-inline-item"><a href="/blog" class="text-muted">Blog</a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/ramiyan-gangatharan/" class="text-muted">LinkedIn</a></li>
+        <li class="list-inline-item"><a href="/TOC" class="text-muted">Terms &amp; Conditions</a></li>
+    </ul>
+</div>
+<script>document.getElementById("copyrightYear").textContent = new Date().getFullYear();</script></footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

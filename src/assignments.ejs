@@ -1,0 +1,37 @@
+---
+layout: layout/mylayout.ejs
+
+pagination:
+  data: assignments
+  size: 1
+  alias: post
+
+eleventyComputed: 
+    title: <%- post.Title %>
+---
+
+<% pagination.items.forEach(post => { %>
+  <article>
+    <!-- Loop through images -->
+    <div class="image-gallery">
+      <% if (post.Image && Array.isArray(post.Image)) { %>
+        <% post.Image.forEach(image => { %>
+          <img 
+            class="rounded mx-auto mb-4 d-block"
+            src="<%= image.url ? 'http://localhost:1337' + image.url : '/path-to-placeholder-image.jpg' %>" 
+            alt="<%= post.Title ? post.Title : 'Placeholder Title' %>">
+        <% }); %>
+      <% } else { %>
+        <!-- Fallback for no images -->
+        <img 
+          class="rounded mx-auto mb-4 d-block"
+          src="/path-to-placeholder-image.jpg" 
+          alt="Placeholder Image">
+      <% } %>
+    </div>
+
+    <!-- Content Display -->
+    <div><%- post.Content %></div>
+  </article>
+<% }); %>
+

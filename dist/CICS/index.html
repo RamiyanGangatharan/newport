@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CICS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/" aria-current="page">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/CMS_Blog" aria-current="page">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about" aria-current="page">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/resume" aria-current="page">Resume</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Projects">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/academic">Academic</a></li>
+                        <li><a class="dropdown-item" href="/personal">Personal</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown menu with hover effect -->
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Notes">
+                        Notes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/WDFnotes">Frameworks</a></li>
+                        <li><a class="dropdown-item" href="/CICS">Mainframe CICS</a></li>
+                        <li><a class="dropdown-item" href="/Placement">Field Placement</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+            
+            
+            
+        </header>
+    
+        <main class="container my-4">
+            
+<div class="container my-5">
+    
+        <article class="mb-5">
+            <div class="card shadow-sm p-4"><div class="content"><h1>Mainframes II CICS Notes</h1>
+<p><em>CICS is basically a menu system you can implement that need special code and JCL to run</em></p>
+<h2>Online Processing</h2>
+<h3>What is it</h3>
+<ul>
+<li><p>it is like an amazon ordering process like you ordering a package and the process of it being shipped to you</p>
+</li>
+<li><p>it resembles a conversation between two entities, for example a conversation between two people</p>
+</li>
+<li><p>information is process as soon as it is received</p>
+</li>
+<li><p>bi-directional communication</p>
+</li>
+<li><p>Batch processing is when you take data and process it with an output (asynchronous) like programs in mainframe I.</p>
+</li>
+<li><p>Online transaction/process is when you query a process then have that access data then it relaying the data back to the client like a REST API in a way. the online process is like a data &quot;broker&quot;</p>
+</li>
+</ul>
+</div></div>
+        </article>
+</div>
+
+            <nav aria-label="Page navigation" class="mt-4">
+    <ul class="pagination justify-content-center">
+        
+        
+        
+
+        <li class="page-item"><a class="page-link" href="/CICS/1/">Next</a></li>
+    </ul>
+</nav>
+            
+        </main>
+
+        <footer class="text-center mt-4"><div class="container">
+    <p class="mb-1">&copy; <span id="copyrightYear"></span> Ramiyan Gangatharan - 100835223</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="/" class="text-muted">Home</a></li>
+        <li class="list-inline-item"><a href="/blog" class="text-muted">Blog</a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/ramiyan-gangatharan/" class="text-muted">LinkedIn</a></li>
+        <li class="list-inline-item"><a href="/TOC" class="text-muted">Terms &amp; Conditions</a></li>
+    </ul>
+</div>
+<script>document.getElementById("copyrightYear").textContent = new Date().getFullYear();</script></footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

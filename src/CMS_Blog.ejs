@@ -1,0 +1,59 @@
+---
+layout: layout/mylayout.ejs
+title: Strapi Blog
+
+pagination:
+    data: bp
+    size: 3
+    alias: post
+---
+
+<div class="container-fluid mt-1 text-center">
+    <h1 class="display-1 text-center">Blog</h1>
+    <p class="subtitle text-center">Sharing Ideas with Strapi - Ramiyan Gangatharan</p>
+
+    <div class="row">
+        <% pagination.items.forEach(post => { %>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h2 class="card-title display-5 fw-bold mb-3"><%= post.Header %></h2>
+                        <img src="http://localhost:1337<%= post.Image.url %>" width="500" height="300">
+                        <div class="card-text mt-4">
+                            <%- post.Content %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<style>
+    .container { max-width: 3000px; }
+    .container-fluid { width: 100%; }
+    .card-body { padding: 10px; }
+
+    body {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+    }
+
+    .card {
+        border: none;
+        background-color: #ffffff;
+        padding: 15px;
+    }
+
+    h2.card-title {
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        color: #555;
+        text-align: justify;
+    }
+</style>

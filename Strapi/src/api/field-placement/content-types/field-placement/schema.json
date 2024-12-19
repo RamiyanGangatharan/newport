@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "field_placements",
+  "info": {
+    "singularName": "field-placement",
+    "pluralName": "field-placements",
+    "displayName": "FieldPlacement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}

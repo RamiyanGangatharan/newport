@@ -1,0 +1,18 @@
+---
+layout: layout/mylayout.ejs
+
+pagination:
+    data: FP
+    size: 1
+    alias: post
+
+eleventyComputed:
+    title: <%- post.Title %>
+---
+<div class="container my-5">
+    <% pagination.items.forEach(post => { %>
+        <article class="mb-5">
+            <div class="card shadow-sm p-4"><div class="content"><%- post.Content %></div></div>
+        </article><% }); 
+    %>
+</div>

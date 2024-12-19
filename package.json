@@ -1,0 +1,26 @@
+{
+  "name": "webdevframeworks_strapi",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Web Developement Frameworks Assignment",
+  "main": "/core/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve"
+  },
+  "author": "Ramiyan Gangatharan [100835223]",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-ejs": "^1.0.0",
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "body-parser": "^1.20.3",
+    "bootstrap": "^5.3.3",
+    "ejs": "^3.1.10",
+    "fs-extra": "^11.2.0",
+    "markdown-it": "^14.1.0",
+    "marked": "^15.0.0",
+    "nodemailer": "^6.9.16"
+  }
+}

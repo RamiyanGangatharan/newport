@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab 1B</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/" aria-current="page">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/CMS_Blog" aria-current="page">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about" aria-current="page">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/resume" aria-current="page">Resume</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Projects">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/academic">Academic</a></li>
+                        <li><a class="dropdown-item" href="/personal">Personal</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown menu with hover effect -->
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Notes">
+                        Notes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/WDFnotes">Frameworks</a></li>
+                        <li><a class="dropdown-item" href="/CICS">Mainframe CICS</a></li>
+                        <li><a class="dropdown-item" href="/Placement">Field Placement</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+            
+    <div class="container">
+        <div class="row border-bottom pb-3 mb-4 justify-content-center">
+            <div class="col-lg-6 my-4 mt-5" style="padding-top: 40px;">
+                <h1 class="display-6 text-center">
+                    
+                    Lab 1 Deliverable: Intro to 11ty & SSG
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </h1>
+            </div>
+            <div class="col-md-4 my-4 text-end">
+                <div class="card border-0 bg-light shadow-lg rounded-3">
+                    <div class="card-body p-4">
+                        <p class="card-text text-uppercase text-primary fw-bold mb-2">Durham College - SEIT</p>
+                        <p class="card-text mb-2">Ramiyan Gangatharan</p>
+                        <p class="card-text mb-2">100835223</p>
+                        <p class="card-text mb-2">
+                            September 20, 2024
+                        </p>
+                        <p class="card-text text-muted mb-0">Web Development: Frameworks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            
+            
+                <div class="text-center mt-4 mb-4">
+    <nav class="navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid d-flex justify-content-center">
+            <ul class="navbar-nav d-flex flex-wrap justify-content-center">
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/labs/">lab 1A</a></div></li>
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/labs/1/">lab 1B</a></div></li>
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/labs/2/">lab 2A</a></div></li>
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/labs/3/">lab 2B</a></div></li>       
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/labs/5/">lab 3A</a></div></li>
+                <li class="nav-item me-2"><div class="card text-center"><a class="nav-link card-body p-3" href="/labs/4/">lab 3B</a></div></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="text-center text-muted"><small>navigate here</small></div>
+</div>
+            
+        </header>
+    
+        <main class="container my-4">
+            
+
+  <article>
+    <img 
+        class="responsive-image rounded mx-auto mb-4 d-block" 
+        src="http://localhost:1337/uploads/header_da6a4c9721.jpg" 
+        alt="Lab 1B">
+    <div><style>
+    .content-container { margin: 0 auto; max-width: 8.5in; padding: 20px; text-align: justify;} 
+    .content-container p { margin-bottom: 15px;} 
+    .content-container h3 { text-align: center; margin-bottom: 20px; } 
+</style>
+
+<div class="content-container">
+
+<h2>Lab Documentation</h2>
+<hr>
+<p>This lab introduced the 11ty framework, highlighting its use for static site generation. Coming from a background with React, which I used to build my portfolio site over the summer, 11ty&#39;s simplicity stood out. Unlike React, which leans heavily on client-side rendering, 11ty focuses on generating static pages, offering faster load times and better SEO without the need for extra configuration. Its templating system streamlined the replication of design elements like headers and footers, making the development process smoother.</p>
+<p>One of the main tools I worked with in this lab was Nunjucks, a templating engine that integrates well with 11ty. The setup process—installing via NPM and creating templates in HTML or Markdown—was intuitive. Nunjucks felt familiar due to my experience with Express.js, particularly with its use of include statements and inline logic. Its syntax, using the .njk file extension, allowed for logic and conditionals, enabling me to create dynamic content within static pages effectively. While Nunjucks was relatively easy to work with, I did encounter challenges with its documentation. Unlike React, whose documentation is more comprehensive, Nunjucks required additional research to fully grasp its features. Despite this, once I became more comfortable with the syntax, I appreciated its flexibility and efficiency in integrating libraries like Bootstrap and handling logic within HTML files.</p>
+<p>In conclusion, this lab deepened my understanding of static site generation and templating engines like Nunjucks. The experience provided a solid foundation for future projects using 11ty, and I plan to explore more advanced features, such as generating dynamic content from Markdown files and further customizing Nunjucks templates. Overall, 11ty offers a more lightweight and performance-focused alternative to client-heavy frameworks like React.</p>
+<br>
+
+<h2>Template Engine Comparison</h2>
+<hr>
+<h3>Why Nunjucks?</h3>
+<p>I chose nunjucks because it is the templating engine we were learning in class. I was tired of having to use EJS and React all the time so I wanted to try something new.</p>
+<br>
+
+<h3>EJS (Embedded JavaScript) <small class="h6">source: <a href="https://www.geeksforgeeks.org/what-are-the-pros-cons-of-ejs-for-node-js-templating/">GeeksForGeeks</a></small></h3>
+<hr>
+<h4>Advantages</h4>
+<ul>
+<li>Simple software</li>
+<li>Ease of integration</li>
+<li>Dynamic Web Development</li>
+<li>Template Inheritence</li>
+</ul>
+<h4>Disadvantages</h4>
+<ul>
+<li>Mixing logic code with presentation code</li>
+<li>performance issues with JS</li>
+<li>Limited features</li>
+</ul>
+<hr>
+<br>
+
+
+
+<h3>Mustache.js <small class="h6">source: <a href="https://github.com/janl/mustache.js">GitHub</a>, <a href="https://medium.com/@prathameshk73/getting-started-with-mustache-js-615a3a782b8f">Medium</a></small></h3>
+<hr>
+<h4>Advantages</h4>
+<ul>
+<li>Makes code more readable</li>
+<li>Can seperates the views from the controllers and models</li>
+<li>a logic-less templating system</li>
+</ul>
+<h4>Disadvantages</h4>
+<ul>
+<li>Can be difficult to use for more complicated web apps</li>
+<li>Limited advanced features used in other frameworks</li>
+</ul>
+<hr>
+<br>
+
+<h3>Handlebars.js <small class="h6">source: <a href="https://codechronicle.medium.com/pros-and-cons-of-popular-javascript-templating-engines-e5d1e3d4504f">Medium</a></small></h3>
+<hr>
+<h4>Advantages</h4>
+<ul>
+<li>Uses logic and helpers which increase functionality</li>
+<li>using Mustache templates you can integrate it into existing projects</li>
+<li>it is very readable</li>
+</ul>
+<h4>Disadvantages</h4>
+<ul>
+<li>there is a large learning curve associated with this framework</li>
+<li>it can take more resources on the browser running this framework</li>
+</ul>
+<hr>
+<p><br><br></p>
+<h2>SSG Application Comparison</h2>
+<hr>
+<br>
+
+<h4>Next.js <small class="h6">source: <a href="https://weber-stephen.medium.com/next-js-advantages-and-disadvantages-over-react-c87aa20de64f">Medium</a></small></h4>
+<hr>
+<h4>Advantages</h4>
+<ul>
+<li>Improved performance on the server side</li>
+<li>Image Optimization (The rendering of the images)</li>
+<li>Built-in middleware support</li>
+<li>prebuilt router (app.js)</li>
+</ul>
+<h4>Disadvantages</h4>
+<ul>
+<li>The learning curve for server components</li>
+<li>Limited third party libraries</li>
+<li>Unnecessary overhead for small projects<ul>
+<li>Designed for larger web applications using tech stacks</li>
+</ul>
+</li>
+</ul>
+<br>
+
+<h4>Jekyll <small class="h6">source: <a href="https://idratherbewriting.com/2015/11/17/pros-and-cons-of-jekyll-for-docs/">Blogpost</a></small></h4>
+<hr>
+<h4>Advantages</h4>
+<ul>
+<li>Good User Experience</li>
+<li>Can write in markdown</li>
+<li>Lightweight</li>
+<li>Simple to understand</li>
+</ul>
+<h4>Disadvantages</h4>
+<ul>
+<li>All files are included by default</li>
+<li>Cannot use YAML</li>
+<li>May not be as scalable as Next.js</li>
+<li>fewer plugins and themes than the competition</li>
+</ul>
+<br>
+
+<h4>React Static <small class="h6">source: <a href="https://rami-zeta.vercel.app/">my full stack web app</a></small></h4>
+<hr>
+<h4>Advantages</h4>
+<ul>
+<li>Quick response time to changes as it is backed by React.js</li>
+<li>Scalable</li>
+<li>Easy data handling</li>
+<li>Creates secure sites</li>
+</ul>
+<h4>Disadvantages</h4>
+<ul>
+<li>Learning curve (React is quite complicated already)</li>
+<li>Limited use cases</li>
+<li>Minimal documentation for React Static</li>
+</ul>
+<p><br><br></p>
+<h2>Notes on the 11ty Configuration Section</h2>
+<hr>
+<h5>The Configurations and Settings we are Using</h5>
+<br>
+
+<hr>
+<h6>../eleventy.config.js</h6>
+<pre><code class="language-JS">module.exports = function(eleventyConfig)
+{
+    eleventyConfig.addPassthroughCopy(&quot;./src/css&quot;);
+    eleventyConfig.addPassthroughCopy(&quot;./src/img&quot;);
+    
+    return{
+        dir:{
+            output: &quot;dist&quot;,
+            input: &quot;src&quot;
+        }
+    };
+}
+</code></pre>
+<p>This snippet of code is used to set the distributable and source code directories.</p>
+<p>The components used in this code:</p>
+<ol>
+<li><p><code>module.exports = function(eleventyConfig)</code></p>
+<ul>
+<li>This line defines and exports a function that takes <code>eleventyConfig</code> as a parameter. This function is where you configure Eleventy.</li>
+</ul>
+</li>
+<li><p><code>eleventyConfig.addPassthroughCopy(&quot;./src/css&quot;);`and`eleventyConfig.addPassthroughCopy(&quot;./src/img&quot;);</code></p>
+<ul>
+<li>These lines instruct Eleventy to copy the contents of the <code>./src/css</code> and <code>./src/img</code> directories to the output directory (<code>dist</code> in this case) without processing them. This is useful for including static assets like stylesheets and images in the final build.</li>
+</ul>
+</li>
+<li><p><code>return { dir: { output: &quot;dist&quot;, input: &quot;src&quot; } };</code></p>
+<ul>
+<li>This section returns an object that configures the input and output directories for Eleventy.<ul>
+<li><code>output: &quot;dist&quot;</code>: Specifies that the compiled site should be placed in the <code>dist</code> directory.</li>
+<li><code>input: &quot;src&quot;</code>: Specifies that Eleventy should look for source files in the <code>src</code> directory.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h6>Summary</h6>
+<p>This configuration ensures that:</p>
+<ul>
+<li>The static files in <code>src/css</code> and <code>src/img</code> are copied directly to the output directory.</li>
+<li>The source files are located in the <code>src</code> directory.</li>
+<li>The generated site will be placed in the <code>dist</code> directory.</li>
+</ul>
+<hr>
+<h6>package.json</h6>
+<pre><code class="language-JSON">{
+  &quot;name&quot;: &quot;eleventysite&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,
+    &quot;start&quot;: &quot;npx @11ty/eleventy --serve&quot;
+  },
+  &quot;keywords&quot;: [],
+  &quot;author&quot;: &quot;Ramiyan Gangatharan [100835223]&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;description&quot;: &quot;This site is for my Web Development Frameworks class.&quot;,
+  &quot;dependencies&quot;: {
+    &quot;@11ty/eleventy&quot;: &quot;^2.0.1&quot;,
+    &quot;bootstrap&quot;: &quot;^5.3.3&quot;,
+    &quot;marked&quot;: &quot;^14.1.2&quot;,
+    &quot;nunjucks&quot;: &quot;^3.2.4&quot;
+  }
+}
+</code></pre>
+<p>The components used in this code:</p>
+<ul>
+<li><p><code>&quot;name&quot;: &quot;eleventysite&quot;</code></p>
+<ul>
+<li>Specifies the name of your project. This is typically used by package managers and tools to identify the project.</li>
+</ul>
+</li>
+<li><p><code>&quot;version&quot;: &quot;1.0.0&quot;</code></p>
+<ul>
+<li>Indicates the version of your project. It follows semantic versioning (major.minor.patch) to help track changes and updates.</li>
+</ul>
+</li>
+<li><p><code>&quot;main&quot;: &quot;index.js&quot;</code></p>
+<ul>
+<li>Defines the entry point file of your project. When your package is required, this file will be used.</li>
+</ul>
+</li>
+<li><p><code>&quot;scripts&quot;</code></p>
+<ul>
+<li>Contains command-line scripts that you can run using <code>npm</code> or <code>yarn</code>.<ul>
+<li>**<code>&quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</code>: A placeholder script for testing; it currently just prints an error message.</li>
+<li><code>&quot;start&quot;: &quot;npx @11ty/eleventy --serve&quot;</code>: Starts the Eleventy development server, allowing you to preview your site locally.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>&quot;keywords&quot;: []</code></p>
+<ul>
+<li>An array of keywords associated with your project. This is often used for search and discovery on package registries but is empty here.</li>
+</ul>
+</li>
+<li><p><code>&quot;author&quot;: &quot;Ramiyan Gangatharan&quot;</code></p>
+<ul>
+<li>Specifies the author of the project.</li>
+</ul>
+</li>
+<li><p><code>&quot;license&quot;: &quot;ISC&quot;</code></p>
+<ul>
+<li>Indicates the license under which the project is distributed. ISC is a permissive open-source license.</li>
+</ul>
+</li>
+<li><p><code>&quot;description&quot;: &quot;This site is for my Web Development Frameworks class.&quot;</code></p>
+<ul>
+<li>Provides a brief description of the project, which can be useful for others to understand its purpose.</li>
+</ul>
+</li>
+<li><p><code>&quot;dependencies&quot;</code></p>
+<ul>
+<li>Lists the project’s dependencies, which are the packages required for your project to function.<ul>
+<li><code>&quot;@11ty/eleventy&quot;: &quot;^2.0.1&quot;</code>: The core Eleventy static site generator package.</li>
+<li><code>&quot;bootstrap&quot;: &quot;^5.3.3&quot;</code>: A popular CSS framework for responsive design.</li>
+<li><code>&quot;marked&quot;: &quot;^14.1.2&quot;</code>: A Markdown parser used to convert Markdown content into HTML.</li>
+<li><code>&quot;nunjucks&quot;: &quot;^3.2.4&quot;</code>: A templating engine used for rendering views.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h6>Summary</h6>
+<p>This <code>package.json</code> file:</p>
+<ul>
+<li>Defines project metadata and dependencies.</li>
+<li>Configures project scripts for testing and starting the development server.</li>
+<li>Specifies the entry point and licensing information.</li>
+</ul>
+<hr>
+<h5>Configuration Settings Worth Exploring</h5>
+<ul>
+<li><code>.eleventyignore</code> file<ul>
+<li>This is a list of files that will not processed by eleventy</li>
+</ul>
+</li>
+<li>Events<ul>
+<li><code>eleventy.before</code><ul>
+<li>this method runs every time the build starts</li>
+</ul>
+</li>
+<li><code>eleventy.after</code><ul>
+<li>this method runs every time the build ends</li>
+</ul>
+</li>
+<li><code>eleventy.beforeWatch</code><ul>
+<li>runs before a build is run only if it&#39;s a re-run during <code>--watch</code> or <code>--serve</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<br>
+
+<h2>Front Matter  <small class="h6">source: <a href="https://www.11ty.dev/docs/data-frontmatter/">11ty Docs</a></small></h2>
+<hr>
+<p>Front Matter is a section of metadata included at the top of a file in a specific format, usually YAML. It is enclosed between triple dashes (<code>---</code>) and provides essential information about the content or template of the page.</p>
+<hr>
+<h4>What Is Front Matter?</h4>
+<ul>
+<li>Format: Front Matter is typically written in YAML and is located between triple dashes at the top of a file.</li>
+<li>Purpose: It contains metadata or configuration settings for the page or template.</li>
+</ul>
+<hr>
+<h4>Why Is Front Matter Important?</h4>
+<h5>Contextual Information</h5>
+<p>It provides context and additional data that affects how the content is rendered or processed. This includes settings such as page titles, template names, and other custom properties.</p>
+<h5>Template Customization</h5>
+<p>In the context of a static site generator like Eleventy, Front Matter allows you to specify attributes like the template to use and the page title. This customization helps in managing and organizing your content effectively.</p>
+<h5>Historical Use</h5>
+<p>Originally, Front Matter was used in printed books to display metadata such as the book’s title, author, ISBN, copyright information, and publication date. Similarly, in digital formats, it serves to provide context for the content.</p>
+<h5>In My Website:</h5>
+<p>On my website, Front Matter is utilized primarily to define the title of each page and to specify the template file that should be used for rendering. This setup streamlines the content management process and ensures consistent formatting across the site.</p>
+<hr>
+</div></div>
+  </article>
+
+
+
+            <nav aria-label="Page navigation" class="mt-4">
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="/labs/">Previous</a></li>
+        
+        
+
+        <li class="page-item"><a class="page-link" href="/labs/2/">Next</a></li>
+    </ul>
+</nav>
+            
+        </main>
+
+        <footer class="text-center mt-4"><div class="container">
+    <p class="mb-1">&copy; <span id="copyrightYear"></span> Ramiyan Gangatharan - 100835223</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="/" class="text-muted">Home</a></li>
+        <li class="list-inline-item"><a href="/blog" class="text-muted">Blog</a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/ramiyan-gangatharan/" class="text-muted">LinkedIn</a></li>
+        <li class="list-inline-item"><a href="/TOC" class="text-muted">Terms &amp; Conditions</a></li>
+    </ul>
+</div>
+<script>document.getElementById("copyrightYear").textContent = new Date().getFullYear();</script></footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

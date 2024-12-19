@@ -1,0 +1,21 @@
+{
+    "kind": "collectionType",
+    "collectionName": "mainframes",
+    "info": {
+        "singularName": "mainframe",
+        "pluralName": "mainframes",
+        "displayName": "Mainframe"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "Title": {
+            "type": "string"
+        },
+        "Content": {
+            "type": "richtext"
+        }
+    }
+}

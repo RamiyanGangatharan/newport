@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strapi Blog</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/" aria-current="page">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/CMS_Blog" aria-current="page">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about" aria-current="page">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/resume" aria-current="page">Resume</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Projects">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/academic">Academic</a></li>
+                        <li><a class="dropdown-item" href="/personal">Personal</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown menu with hover effect -->
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown for Notes">
+                        Notes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="notesDropdown">
+                        <li><a class="dropdown-item" href="/WDFnotes">Frameworks</a></li>
+                        <li><a class="dropdown-item" href="/CICS">Mainframe CICS</a></li>
+                        <li><a class="dropdown-item" href="/Placement">Field Placement</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+            
+            
+            
+        </header>
+    
+        <main class="container my-4">
+            
+<div class="container-fluid mt-1 text-center">
+    <h1 class="display-1 text-center">Blog</h1>
+    <p class="subtitle text-center">Sharing Ideas with Strapi - Ramiyan Gangatharan</p>
+
+    <div class="row">
+        
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h2 class="card-title display-5 fw-bold mb-3">Insertion Sort</h2>
+                        <img src="http://localhost:1337/uploads/cards_663abe0341.webp" width="500" height="300">
+                        <div class="card-text mt-4">
+                            <p>According to <a href="https://www.geeksforgeeks.org/heap-sort/">GeeksforGeeks</a>, &quot;<em>Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list. It is like sorting playing cards in your hands. You split the cards into two groups: the sorted cards and the unsorted cards. Then, you pick a card from the unsorted group and put it in the right place in the sorted group.</em>&quot;</p>
+<p>One of the key advantages of insertion sort is its simplicity and ease of implementation, making it a straightforward choice for basic sorting tasks. It is a stable sorting algorithm, meaning that it maintains the relative order of equal elements. Insertion sort also performs efficiently on small lists and nearly sorted lists, where the number of necessary swaps is minimal. Insertion sort is space-efficient, as it is an in-place sorting algorithm that does not require additional memory. It is also adaptive, meaning the number of inversions is directly proportional to the number of swaps. For example, if the array is already sorted, no swapping occurs, and the algorithm only requires O(n) time. However, insertion sort is inefficient for sorting large lists. It does not perform as well as more advanced sorting algorithms like merge sort or quicksort, which are typically preferred for larger datasets due to their better average-case performance.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h2 class="card-title display-5 fw-bold mb-3">Machine Learning</h2>
+                        <img src="http://localhost:1337/uploads/ML_2926203ad8.jpg" width="500" height="300">
+                        <div class="card-text mt-4">
+                            <p>According to <a href="https://www.geeksforgeeks.org/ml-machine-learning/">GeeksforGeeks</a>, &quot;<em>Machine learning is a branch of artificial intelligence that enables algorithms to uncover hidden patterns within datasets, allowing them to make predictions on new, similar data without explicit programming for each task. Traditional machine learning combines data with statistical tools to predict outputs, yielding actionable insights. This technology finds applications in diverse fields such as image and speech recognition, natural language processing, recommendation systems, fraud detection, portfolio optimization, and automating tasks.
+For instance, recommender systems use historical data to personalize suggestions. Netflix, for example, employs collaborative and content-based filtering to recommend movies and TV shows based on user viewing history, ratings, and genre preferences. Reinforcement learning further enhances these systems by enabling agents to make decisions based on environmental feedback, continually refining recommendations. Machine learning’s impact extends to autonomous vehicles, drones, and robots, enhancing their adaptability in dynamic environments. This approach marks a breakthrough where machines learn from data examples to generate accurate outcomes, closely intertwined with data mining and data science.</em>&quot;</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h2 class="card-title display-5 fw-bold mb-3">Ontario Provincial Police</h2>
+                        <img src="http://localhost:1337/uploads/OPP_47d53ab1cb.webp" width="500" height="300">
+                        <div class="card-text mt-4">
+                            <p>The Ontario Provincial Police (OPP) serve as Ontario&#39;s equivalent of State Troopers in the United States, playing a key role in law enforcement across the province. Their responsibilities are extensive and varied, covering both routine patrols and specialized operations.</p>
+<p>Primarily, the OPP patrol all provincial highways, including the busy 400-series highways, as well as numerous waterways throughout Ontario. They provide police services to rural communities without their own municipal or regional police forces. Additionally, the OPP investigate province-wide and cross-jurisdictional crimes such as organized crime, trafficking, and smuggling. They also handle major cases like homicides and kidnappings and offer investigative support to local police services when needed.</p>
+<p>The OPP’s role extends beyond traditional policing as well. They deliver front-line municipal police services to hundreds of communities under contract and provide air support for search and rescue, prisoner transport, and other investigations. They support several First Nations Policing programs with administrative resources and offer specialized response services throughout Ontario.</p>
+<p>Furthermore, the OPP are responsible for the protection of visiting politicians and government officials, including the Lieutenant Governor of Ontario, and provide security for government buildings through their Special Constables. They also handle provincial offender transport and work closely with other provincial agencies, such as the Ministry of Transportation and the Ministry of Natural Resources, to enforce safety and conservation regulations across highways and protected areas.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+<style>
+    .container { max-width: 3000px; }
+    .container-fluid { width: 100%; }
+    .card-body { padding: 10px; }
+
+    body {
+        font-family: 'Georgia', serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+    }
+
+    .card {
+        border: none;
+        background-color: #ffffff;
+        padding: 15px;
+    }
+
+    h2.card-title {
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        color: #555;
+        text-align: justify;
+    }
+</style>
+            <nav aria-label="Page navigation" class="mt-4">
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="/CMS_Blog/1/">Previous</a></li>
+        
+        
+
+        <li class="page-item"><a class="page-link" href="/CMS_Blog/3/">Next</a></li>
+    </ul>
+</nav>
+            
+        </main>
+
+        <footer class="text-center mt-4"><div class="container">
+    <p class="mb-1">&copy; <span id="copyrightYear"></span> Ramiyan Gangatharan - 100835223</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="/" class="text-muted">Home</a></li>
+        <li class="list-inline-item"><a href="/blog" class="text-muted">Blog</a></li>
+        <li class="list-inline-item"><a href="https://www.linkedin.com/in/ramiyan-gangatharan/" class="text-muted">LinkedIn</a></li>
+        <li class="list-inline-item"><a href="/TOC" class="text-muted">Terms &amp; Conditions</a></li>
+    </ul>
+</div>
+<script>document.getElementById("copyrightYear").textContent = new Date().getFullYear();</script></footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>

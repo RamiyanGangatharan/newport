@@ -1,0 +1,43 @@
+<% if (["Lab 1A", "Lab 1B", "Assignment 1A", "Assignment 1B", "Lab 2A", "Lab 2B", "Assignment 2A", "Assignment 2B", "Lab 3A", "Lab 3B", "Assignment 3A", "Assignment 3B"].includes(title)) { %>
+    <div class="container">
+        <div class="row border-bottom pb-3 mb-4 justify-content-center">
+            <div class="col-lg-6 my-4 mt-5" style="padding-top: 40px;">
+                <h1 class="display-6 text-center">
+                    <% if (title === "Lab 1A") { %>Lab 1 Instruction: Intro to 11ty & SSG<% } %>
+                    <% if (title === "Lab 1B") { %>Lab 1 Deliverable: Intro to 11ty & SSG<% } %>
+                    <% if (title === "Assignment 1A")  { %>A1 Instruction: Lab 1 Revision<% } %>
+                    <% if (title === "Assignment 1B")  { %>A1 Deliverable: Lab 1 Revision<% } %>
+                    <% if (title === "Lab 2A")        { %>Lab 2 Instruction: Headless CMS<% } %>
+                    <% if (title === "Lab 2B")        { %>Lab 2 Deliverable: Headless CMS<% } %>
+                    <% if (title === "Assignment 2A") { %>A2 Instruction: CMS Implementation<%}%>
+                    <% if (title === "Assignment 2B") { %>A2 Deliverable: CMS Implementation<%}%>
+                    <% if (title === "Lab 3A")        { %>Lab 3 Instruction: Serverless Functions<% } %>
+                    <% if (title === "Lab 3B")        { %>Lab 3 Deliverable: Serverless Functions<% } %>
+                    <% if (title === "Assignment 3A") { %>A3 Instruction: Serverless Functions<%}%>
+                    <% if (title === "Assignment 3B") { %>A3 Deliverable: Serverless Functions<%}%>
+                </h1>
+            </div>
+            <div class="col-md-4 my-4 text-end">
+                <div class="card border-0 bg-light shadow-lg rounded-3">
+                    <div class="card-body p-4">
+                        <p class="card-text text-uppercase text-primary fw-bold mb-2">Durham College - SEIT</p>
+                        <p class="card-text mb-2">Ramiyan Gangatharan</p>
+                        <p class="card-text mb-2">100835223</p>
+                        <p class="card-text mb-2">
+                            <%= 
+                                title.startsWith("Lab 1") ? "September 20, 2024" : 
+                                title.startsWith("Assignment 1") ? "October 4, 2024" : 
+                                title.startsWith("Lab 2") ? "November 1, 2024" : 
+                                title.startsWith("Assignment 2") ? "November 22, 2024" : 
+                                title.startsWith("Lab 3") ? "December 13, 2024" : 
+                                title.startsWith("Assignment 3") ? "December 13, 2024" : 
+                                title.startsWith("Test") ? "November 22, 2024" : ""
+                            %>
+                        </p>
+                        <p class="card-text text-muted mb-0">Web Development: Frameworks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% } %>
