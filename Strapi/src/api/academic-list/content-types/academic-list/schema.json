@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academic_lists",
+  "info": {
+    "singularName": "academic-list",
+    "pluralName": "academic-lists",
+    "displayName": "AcademicList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

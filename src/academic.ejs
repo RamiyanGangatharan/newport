@@ -1,6 +1,43 @@
 ---
 layout: layout/mylayout.ejs
 title: Academic
+
+pagination:
+    data: academic-lists
+    size: 99
+    alias: post
 ---
 
-<h1 class="display-1">Academic Projects</h1>
+<h1 class="display-1 text-center">Academic Projects</h1>
+<hr>
+<div class="container-fluid mt-4 text-center">
+    <div class="row g-4">
+        <% pagination.items.forEach(post => { %>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <!-- Card Header -->
+                    <div class="card-header">
+                        <h2 class="card-title fs-4 fw-bold mb-0"><%= post.Title %></h2>
+                    </div>
+
+                    <!-- Card Image -->
+                    <img 
+                        src="http://localhost:1337<%= post.Image.url %>" 
+                        alt="<%= post.Header %>" 
+                        class="card-img-top img-fluid mt-2" 
+                        style="margin: auto; height: 200px; width: 375px; object-fit: cover;">
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <p class="lead" style="text-align: justify !important; white-space: normal;">
+                            <%- post.Content %>
+                        </p>
+                        <hr>
+                        <a href="<%- post.Link %>" class="btn btn-outline-dark btn-sm">Read More</a>
+                    </div>
+                    
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>

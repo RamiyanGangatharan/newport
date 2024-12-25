@@ -23,4 +23,6 @@ export default function(eleventyConfig) {
     eleventyConfig.addGlobalData("CICS", async () => await fetchAndProcessData("mainframes", "CICS content"));
     eleventyConfig.addGlobalData("FP", async () => await fetchAndProcessData("field-placements", "FP content"));
     eleventyConfig.addGlobalData("about", async () => await fetchAndProcessData("aboutmes", "about content"));
+    eleventyConfig.addGlobalData("academic-lists", async() => await fetchAndProcessData("academic-lists", "Academic List Content"));
+    eleventyConfig.addGlobalData("personal-lists", async() => await fetchAndProcessData("personal-lists", "Personal List Content"));
 }

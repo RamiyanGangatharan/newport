@@ -428,6 +428,39 @@ export interface ApiAboutmeAboutme extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAcademicListAcademicList
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'academic_lists';
+  info: {
+    description: '';
+    displayName: 'AcademicList';
+    pluralName: 'academic-lists';
+    singularName: 'academic-list';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Content: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Link: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::academic-list.academic-list'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiAssignmentAssignment extends Struct.CollectionTypeSchema {
   collectionName: 'assignments';
   info: {
@@ -627,6 +660,39 @@ export interface ApiNoteNote extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::note.note'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPersonalListPersonalList
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'personal_lists';
+  info: {
+    description: '';
+    displayName: 'PersonalList';
+    pluralName: 'personal-lists';
+    singularName: 'personal-list';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Content: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Link: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::personal-list.personal-list'
+    > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     Title: Schema.Attribute.String;
@@ -1147,6 +1213,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about.about': ApiAboutAbout;
       'api::aboutme.aboutme': ApiAboutmeAboutme;
+      'api::academic-list.academic-list': ApiAcademicListAcademicList;
       'api::assignment.assignment': ApiAssignmentAssignment;
       'api::blog.blog': ApiBlogBlog;
       'api::field-placement.field-placement': ApiFieldPlacementFieldPlacement;
@@ -1154,6 +1221,7 @@ declare module '@strapi/strapi' {
       'api::lab.lab': ApiLabLab;
       'api::mainframe.mainframe': ApiMainframeMainframe;
       'api::note.note': ApiNoteNote;
+      'api::personal-list.personal-list': ApiPersonalListPersonalList;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

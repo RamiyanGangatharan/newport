@@ -24,7 +24,7 @@
         <main class="container my-4">
             <%- content %>
             <% if ([
-                        "Strapi Blog", 
+                        "Strapi Blog",
 
                         "Lab 1A", "Lab 1B", 
                         "Lab 2A", "Lab 2B",
@@ -33,7 +33,6 @@
                         "Assignment 1A", "Assignment 1B", 
                         "Assignment 2A", "Assignment 2B", 
                         "Assignment 3A", "Assignment 3B",
-
                         "WDF", "CICS", "Placement", "About Me"
                     ]
                     .includes(title)) { %><%- include('../partials/paging.ejs') %>
