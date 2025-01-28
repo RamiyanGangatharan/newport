@@ -16,7 +16,7 @@ eleventyComputed:
         <div class="row p-4 align-items-center rounded-3 border shadow-lg" style="background-color: #f8f9fa;">
             <div class="p-3 pt-lg-3 w-100">
                 <h1 class="display-4">About Me</h1>
-                <div class="double-column">
+                <div class="container">
                     <p class="lead text-muted" ><%- post.Content %></p>
                 </div>
             </div>
@@ -30,13 +30,5 @@ eleventyComputed:
         text-align: justify;
         font-family: Arial, Helvetica, sans-serif;
         font-size: medium;
-    }
-    .double-column {
-        column-count: 2; /* Creates a double column layout */
-        column-gap: 20px; /* Space between columns */
-    }
-
-    .double-column p {
-        break-inside: avoid; /* Prevents breaks within paragraphs */
     }
 </style>
